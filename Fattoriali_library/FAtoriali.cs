@@ -20,7 +20,6 @@ namespace Fattoriali_library
                 for (int i = 2; i <= number; i++)
                 {
                     prod *= i;
-
                 }
                 return prod;
             }

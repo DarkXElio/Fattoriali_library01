@@ -12,9 +12,7 @@ namespace Fattoriali_UnitTest
         {
             nr2 = Fattoriali_library.FAtoriali.Fattoriale(nr1);
             int resultato_asspetato = nr2;
-
             Assert.AreEqual(120, resultato_asspetato);
-
         }
 
 
