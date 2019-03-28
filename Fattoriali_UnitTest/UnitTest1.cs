@@ -7,12 +7,18 @@ namespace Fattoriali_UnitTest
     public class UnitTest1
     {
         [DataTestMethod]
-        [DataRow(5, 120)]
-        public void Fattorialetest(int nr1, int nr2)
+        [DataRow(0)]
+        [DataRow(1)]
+        [DataRow(5)]
+        [DataRow(10)]
+        [DataRow(50)]
+        public void TestMethod1(long numero)
         {
-            nr2 = Fattoriali_library.FAtoriali.Fattoriale(nr1);
-            int resultato_asspetato = nr2;
-            Assert.AreEqual(120, resultato_asspetato);
+            long fattoriale;
+
+            fattoriale = EquazioniLibrary.CalcoliCombinatori.Fattoriale(numero);
+
+            Console.WriteLine("{0}!={1}", numero, fattoriale);
         }
 
 

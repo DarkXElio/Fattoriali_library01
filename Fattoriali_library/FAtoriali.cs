@@ -8,21 +8,16 @@ namespace Fattoriali_library
 {
     public class FAtoriali
     {
-        static public int Fattoriale(int number)
+        static public long Fattoriale(long N1)
         {
-            if (number < 0)
-                return 0;
-            else if (number <= 1)
-                return 1;
-            else
+            long fattoriale = 1;
+
+            for (int i = 1; i <= N1; i++)
             {
-                int prod = 1;
-                for (int i = 2; i <= number; i++)
-                {
-                    prod *= i;
-                }
-                return prod;
+                fattoriale = fattoriale * i;
             }
+
+            return fattoriale;
         }
     }
 }
