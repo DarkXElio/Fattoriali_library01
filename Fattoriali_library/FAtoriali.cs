@@ -14,7 +14,7 @@ namespace Fattoriali_library
 
             for (int i = 1; i <= N1; i++)
             {
-                fattoriale = fattoriale * i;
+                fattoriale = fattoriale * i ;
 
             }
 

@@ -18,7 +18,7 @@ namespace Fattoriali_UnitTest
 
             fattoriale = Fattoriali_library.FAtoriali.Fattoriale(numero);
 
-            Console.WriteLine("{0}!={1}", numero, fattoriale);
+            Console.WriteLine("{0}!={1} ", numero, fattoriale);
         }
 
 
